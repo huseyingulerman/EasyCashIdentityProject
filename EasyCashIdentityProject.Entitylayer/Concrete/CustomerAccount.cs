@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace EasyCashIdentityProject.Entitylayer.Concrete
 {
-    internal class CustomerAccount
+    public class CustomerAccount
     {
+        public int CustomerAccountId { get; set; }
+        public string CustomerAccountNumber { get; set; }
+        public string  CustomerCurrency { get; set; }
+        public decimal CustomerAccountBalance { get; set; }
+        public string BankBranch { get; set; }
+   
     }
 }
