@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 
 namespace EasyCashIdentityProject.Entitylayer.Concrete
 {
-    public class AppUser:IdentityUser
+    public class AppUser:IdentityUser<int>
     {
         public string Name { get; set; }
-        public string MyProperty { get; set; }
+        public string Surname { get; set; }
+        public string District { get; set; }
+        public string City { get; set; }
+        public string ImageUrl { get; set; }
+
     }
 }
